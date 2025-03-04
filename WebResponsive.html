@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Apple Responsive Web</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit
+  ;
+}
+body {
+  margin: 0;
+  background-color: #ffeedd;
+}
+
+h1,h2{text-align:center;margin:1em 0;}
+.wrap {
+  margin: 0 10px;
+}
+
+.textbox-1 {
+  font-size: 1.25em;
+  text-align: justify;
+  display: flex;
+}
+
+.inner {
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  padding: 25px 0;
+  max-width: 1280px;
+  margin: 10px auto;
+}
+
+.w60 {
+  flex: 1 0 55%;
+  background: #f9f9f9;
+  padding: 10px 20px;
+}
+
+.w30 {
+  background: #f9f9f9;
+}
+
+.wrap2 .w60{flex: 1 0 50%;}
+.object-fit {
+  overflow: hidden;
+  position: relative;
+  max-width:50%;
+}
+
+.object-fit img {
+  width:auto;
+  height:320px;
+  display:block;
+  margin:auto
+}
+
+@media screen and (max-width: 700px) {
+  .row {
+    flex-wrap: wrap;
+  }
+  .wrap .row > * {
+    flex: 1 0 100%;
+    max-width:none;
+  }
+  .object-fit img {
+    position: static;
+    height: auto;
+    width: 100%;
+    margin: auto;
+    display: block;
+    transform: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    border-top: 2px solid #ffffff;
+  }
+  .textbox-1 {
+    order: 1;
+    min-height: 0;
+  }
+}
+</style>
+</head>
+
+<body>
+<!-- Navigator -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Back to top</a>
+    <div class="w3-right w3-hide-small w3-hide-medium">
+      <a href="https://support.apple.com/?cid=gn-ols-home-hp-tab" target="_blank" class="w3-bar-item w3-button">Support</a>
+      <a href="https://www.apple.com/store" target="_blank" class="w3-bar-item w3-button">Store</a>
+      <a href="https://locate.apple.com/id/en/" target="_blank" class="w3-bar-item w3-button">Location</a>
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <a href="#products" class="w3-bar-item w3-button">Product</a>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+      <a href="#bottom" class="w3-bar-item w3-button">Bottom of page</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="https://1000logos.net/wp-content/uploads/2016/10/Apple-Logo.png" alt="apple.jpeg" width="100" height="100" style="margin-top: 80px;">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge" style="margin-left: 60px; margin-bottom: -14px;">Apple Inc.</h1>
+  </div>
+</header>
+
+<!-- Content -->
+<div class="w3-content" style="max-width:1100px"  id="about">
+
+  <!-- About -->    
+  <div class="w3-hide-small flex-container" style="margin-top: 30px;"><img src="https://media.istockphoto.com/id/1408885337/photo/entrance-of-the-apple-store-in-brussels-apple-logo-on-the-window.jpg?s=612x612&w=0&k=20&c=NMXj_QEx0JN9pGT3dXFIGQqRfnhEBKv8uMPZ2dMnb4A=" alt="Apple HQ" width="1100" height="300"></a></div>
+  <div class="wrap">
+    <div class="row">
+      <div class="textbox-1">
+        <div class="inner">
+          <h1 class="w3-center" style="margin: 0px;">About Us</h1>
+          <p>Apple Inc. (formerly Apple Computer Inc.) is an American computer and consumer electronics company famous for creating the iPhone, iPad and Macintosh computers. Apple is one of the largest companies globally with a market cap of more than $3 trillion.
+             Apple devices are renowned for their design aesthetic and attention to detail. Tight integration between hardware and software gives their systems a performance advantage over competitor systems with similar specifications.
+             Apple rose to its position as a market leader by correctly positioning its products. They didn't invent personal computers, graphical user interfaces (GUIs), mp3 players, smartphones, smartwatches or tablets. Instead, they produced some of the first 
+             versions of these products that were refined, easy to use and well-designed, which led to wide market adoption.</p>
+        </div>
+      </div>
+      <div class="object-fit w3-hide-medium w3-hide-large" style="margin-bottom: 10px;"><a href="#"><img src="https://media.istockphoto.com/id/1408885337/photo/entrance-of-the-apple-store-in-brussels-apple-logo-on-the-window.jpg?s=612x612&w=0&k=20&c=NMXj_QEx0JN9pGT3dXFIGQqRfnhEBKv8uMPZ2dMnb4A=" alt="Apple HQ" width="1200" height="800"></a></div>
+    </div>
+  </div>
+  
+  <hr style="border: 2px solid gray;" id="products">
+
+  <div class="w3-row">\
+      <h1 class="w3-center" style="text-align: center; margin: 0px;">Newest Creation</h1>
+      <h5 style="text-align: center;">(Click the product title to be redirected)</h5>
+  </div>
+
+  <div class="wrap">
+    <div class="row">
+      <div class="w60 textbox-1">
+        <div class="inner">
+          <h3><b><a href="https://www.apple.com/uk/iphone-16/" style="text-decoration: none;" target="_blank">iPhone 16</b></h3></a>
+          <p>The newest iPhone series, iPhone 16 made with a sturdy, aerospace-grade aluminum enclosure and strong — and beautiful — color-infused glass on the back. The latest-generation Ceramic Shield material is two times tougher than any smartphone glass. Equipped with a better camera than the previous serius, 48MP Wide camera and 12MP Ultra Wide camera is primed to take pictures compareable to professional camera.</p>
+        </div>
+      </div>
+    <div class="w30 object-fit"><a href="#"><img src="https://digits.com.kw/cdn/shop/files/Apple-iPhone-16-Pro-Max---Mobile-Phone_6S_S.jpg?v=1740664456&width=1946" alt="pic1" width="1200" height="600"> </a></div>
+  </div>
+  
+  <div class="row">
+    <div class="w30 object-fit"><a href="#"><img src="https://ibox.co.id/_next/image?url=https%3A%2F%2Fcdnpro.eraspace.com%2Fmedia%2Fcatalog%2Fproduct%2Fm%2Fa%2Fmacbook_pro_14-inch_m4_chip_space_black_1_2.jpg&w=3840&q=45" alt="pic2" width="1000" height="800"></a></div>
+      <div class="w60 textbox-1">
+        <div class="inner">
+          <h3><b><a href="https://www.apple.com/uk/shop/buy-mac/macbook-pro/14-inch-m4-pro" style="text-decoration: none;" target="_blank">MacBook M4</b></h3></a>
+          <p>The 14-inch and 16-inch MacBook Pro with M4 chip delivers spectacular performance in a super-powerful laptop. It's Pro in every way, with up to 24 hours of battery life and a stunning Liquid Retina XDR display with up to 1,600 nits of peak brightness.</p>
+        </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="w60 textbox-1">
+      <div class="inner">
+        <h3><b><a href="https://www.apple.com/shop/buy-watch/apple-watch" style="text-decoration: none;" target="_blank">Apple Watch Series 10</b></h3></a>
+          <p>The ultimate device for a healthy life. Apple Watch can do what your other devices can't because it's on your wrist. When you wear it, you get meaningful health insights, a fitness partner that measures all the ways you move, a connection to the people you care about most and advanced safety features.</p>
+      </div>
+    </div>
+    <div class="w30 object-fit"><a href="#"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxIQEhUQEREVEBAVFRAVGBUQFxgWEhASFRUWFhUWFhUYHiggGBolHRUVIjIhJyorLi4uGB8zODMuNygtLisBCgoKDQ0ODw0NDysZFRktLSsrKys3LSs3KysrKzcrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrKysrK//AABEIAOEA4QMBIgACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABwIEBQYIAQP/xABWEAABAwIBBwYHCggKCwEAAAABAAIDBBEFBgcSITFBURNhcYGRsSIyM0JScqEUI1NidJKys8HRNDU2Q4KDw9MIFSRFk6LC0uHxFxglRFRVZHOElOMW/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAH/xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAwDAQACEQMRAD8AnFERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEXxqqpkTS+R7Y2Da55DWjrK07Fs51HFcRB1Q4b2+Cz5ztfYCg3dFD9bnWqHeTjjjHOC53aTb2LFTZw61/wCfI9UNb3BBOqLn9+WdYdtRJ8933rwZWVf/ABEvz3ferB0CigJmXNWz/eX9br96yVHnSq2eMY5R8cAe1tkE1otBwTOjTSkNnaad3peNH1kax2LeaaoZK0Pje17DrDmEFp6CFB9UREBERAREQEREBERAREQEREBERAREQFouW+ceGhJggAnqhqOv3uE/HI2u+KOshYrObnC5DSoqN3v2sSStPkeLGH0+J83p2QzdBmMayhqKx+nUSukO4HUxnM1o1BY/TXxC+jVUfRpX0Coarmmgc9zWsaXvcWta0bXOcbADrRXykeGC57FYyVRd52gPapNx3M9NyDZIJ+UqQ0cpE+wY920iJ+7gNLbxaopq6V8T3RyMdHIwlrmvFnNcNxBRH10o95c485XmlHwI6CrSyWQXzDbxHnocs9kzldU0D7xv0QT4THa4pOkcecWK1MEhXEUt9R1hB0vkfllBiLbN97nAu6Jx1+sw+c3n7QFsq5Poqx8D2vY9zS0gte02c0jnU75v8vG1wEE5DKoDURqbOANZA3P4t6xvAit5REQEREBERAREQEREBERARFrWW+WEOGRAu98n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1jRwa0ADuX2RFAREQEREBERAREQEREBERAVL2hwIIBBBBB1gg7QQqkQQXnLzbGlLquibpU2svibrNPxc3jH9Ho2RmAuwFFmXeapsxdUUAbHIbl0B8GN53mM7GHm2dG8iFAqwvvXYfLA8xyxuje3a14II6ivhZUVtWVwPEn00rJojaSNwc2+w7i08xBIPMViQq2OQdQZN4/FXwCeI23PYT4UTwNbXffvFio5zm5wmua6io36QN2yytOojexh3jiepRnT172texkj4xI0NeGOIEjQbgOA2j7zxVjIwjoRXrnqi6ouvQiKrr1ouvWRErYclslqivfoQM8AHw5X+Si6T5zvijX0DWg8yUyfkrp208Wre99tUMe9x59wG89a6Nw2hjp4mQRN0Y42hrRzDeeJO0niVYZLZOQ4fCIYRcmxfI7x5X8Xc3AbAswooiIgIiICIiAiIgIiICIiAiIgIiICIiDHYzgVNWN0KiFso3E6nt9Vw1hR3jWZ5hu6ln0fiTi4+e37lKqIOeq/NriEV/eDIOMRa6/QAdL2LC1GTVVH49PK31mOHeF0+iDlN9A9u1pHSF42F/C66rLAdoB6V5yLfRHYEHLsOGyvNmwvcfitJ7lncNyBxCe2jSujHpTWjA57O1nqBXQ4Fl6gjPJ7NJEwh9bLy5+Diu2Prd4zv6qkakpY4WCOJjY42iwawBrWjmAX2RAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREBERAREQEREH/2Q==" alt="pic3" width="800" height="800"> </a></div>
+  </div>
+  
+  <div class="row">
+    <div class="w30 object-fit"><a href="#"><img src="data:image/jpeg;base64,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" alt="pic4" width="1200" height="600"> </a></div>
+      <div class="w60 textbox-1">
+        <div class="inner">
+          <h3><b><a href="https://www.apple.com/id/ipad-pro/" style="text-decoration: none;" target="_blank">iPad Pro</b></h3></a>
+          <p>The all-new iPad Pro packs incredible power into an incredibly thin, light, and portable design. Push the boundaries of what's possible in iPad with the superportable 11-inch model and the expansive 13-inch model that's the thinnest Apple product ever made .</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <hr style="border: 2px solid gray;">
+    <h1 style="margin: 0px;">Contact</h1><br>
+    <p>We offer full time service to hear out and help customer problem/s. Please refer to the link below to check your region Apple Support number:</p>
+    <p class="w3-text-blue-grey w3-large"><a target="_blank" href="https://support.apple.com/id-id/106932?choose-your-country=united-states">Check your region customer service number.</a></p>
+    <p>You can also contact us by using the Mail Support available on the device.</p>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer id="bottom" class="w3-center w3-light-grey w3-padding-32">
+  <p><a href="https://apple.com/" title="Apple" target="_blank" class="w3-hover-text-green">Apple Inc.</a></p>
+</footer>
+</body>
+</html>
